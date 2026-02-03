@@ -27,7 +27,6 @@
 
 - [About](#about)
 - [Features](#features)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Development](#development)
 - [Architecture](#architecture)
@@ -50,7 +49,7 @@ AE AI Assistant is a CEP extension that brings AI-powered automation to Adobe Af
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
 </p>
 
-<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+<br>
 
 ## Features
 
@@ -79,13 +78,7 @@ AE AI Assistant is a CEP extension that brings AI-powered automation to Adobe Af
 </tr>
 </table>
 
-<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
-
-## Demo
-
-> Coming soon: GIF demonstrations of key features
-
-<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+<br>
 
 ## Installation
 
@@ -132,7 +125,7 @@ AE AI Assistant is a CEP extension that brings AI-powered automation to Adobe Af
 
 4. Restart After Effects and open: **Window → Extensions → AE AI Assistant**
 
-<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+<br>
 
 ## Development
 
@@ -184,7 +177,7 @@ var fn = function() {};
 3. Register: `ActionRegistry.register('actionName', ServiceName.methodName);`
 4. Add to `ALLOWED_ACTIONS` in `js/main.js`
 
-<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+<br>
 
 ## Architecture
 
@@ -208,7 +201,7 @@ var fn = function() {};
 └── index.html              # Panel UI
 ```
 
-<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+<br>
 
 ## Usage
 
@@ -247,7 +240,7 @@ Connect to an OpenAI-compatible API and use natural language:
 | **Professional** | Color grade, motion graphics |
 | **VFX** | Screen replacement, tracking composite |
 
-<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+<br>
 
 ## Services Reference
 
@@ -265,7 +258,7 @@ Connect to an OpenAI-compatible API and use natural language:
 | Media | `marker`, `audio`, `color` | 21 |
 | Workflow | `workflow`, `tracking` | 8 |
 
-<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+<br>
 
 ## Troubleshooting
 
@@ -297,7 +290,7 @@ Connect to an OpenAI-compatible API and use natural language:
 
 </details>
 
-<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+<br>
 
 ## Contributing
 
@@ -309,13 +302,11 @@ Contributions are welcome! Feel free to:
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+<br>
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 ---
 
