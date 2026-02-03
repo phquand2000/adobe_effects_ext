@@ -1,6 +1,12 @@
 # AE AI Assistant
 
 <p align="center">
+  <a href="https://buymeacoffee.com/severus1509">
+    <img src="https://img.shields.io/badge/☕_Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee">
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/After%20Effects-2026+-9999FF?style=for-the-badge&logo=adobe-after-effects&logoColor=white" alt="After Effects">
   <img src="https://img.shields.io/badge/CEP-12.0-00D8FF?style=for-the-badge" alt="CEP Version">
   <img src="https://img.shields.io/badge/Actions-158-green?style=for-the-badge" alt="Actions">
@@ -14,15 +20,42 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- **🤖 AI Integration** - Natural language commands via AI API
-- **🎬 29 Services** - Camera, lighting, effects, tracking, rendering & more
-- **⚡ 158 Actions** - Pre-built automation for common VFX tasks
-- **🎲 3D Support** - Native .glb/.gltf import, PBR materials, 3D camera
-- **🎯 Camera Tracker** - Motion tracking integration
-- **🌀 Motion Blur & DOF** - Professional depth of field and blur
-- **📦 Workflow Templates** - From basic to professional VFX pipelines
+<table>
+<tr>
+<td width="50%">
+
+**AI Integration**  
+Natural language commands via OpenAI-compatible API
+
+**29 Services**  
+Camera, lighting, effects, tracking, rendering & more
+
+**158 Actions**  
+Pre-built automation for common VFX tasks
+
+**3D Support**  
+Native .glb/.gltf import, PBR materials, 3D camera
+
+</td>
+<td width="50%">
+
+**Camera Tracker**  
+3D motion tracking integration
+
+**Motion Blur & DOF**  
+Professional depth of field and blur
+
+**Workflow Templates**  
+From basic to professional VFX pipelines
+
+**ExtendScript Backend**  
+Modular architecture with 29 service modules
+
+</td>
+</tr>
+</table>
 
 ## 📦 Installation
 
@@ -250,12 +283,6 @@ Settings are persisted locally.
 MIT License - see [LICENSE](LICENSE) for details.
 
 ---
-
-<p align="center">
-  <a href="https://buymeacoffee.com/severus1509">
-    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee">
-  </a>
-</p>
 
 <p align="center">
   Made with ❤️ by <a href="https://github.com/phquand2000">phquand2000</a>
