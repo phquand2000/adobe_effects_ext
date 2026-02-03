@@ -1,169 +1,167 @@
+<div align="center">
+
 # AE AI Assistant
 
-<p align="center">
-  <a href="https://buymeacoffee.com/severus1509">
-    <img src="https://img.shields.io/badge/☕_Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee">
-  </a>
-</p>
+<a href="https://buymeacoffee.com/severus1509">
+  <img src="https://img.shields.io/badge/Support_This_Project-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee">
+</a>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/After%20Effects-2026+-9999FF?style=for-the-badge&logo=adobe-after-effects&logoColor=white" alt="After Effects">
-  <img src="https://img.shields.io/badge/CEP-12.0-00D8FF?style=for-the-badge" alt="CEP Version">
-  <img src="https://img.shields.io/badge/Actions-158-green?style=for-the-badge" alt="Actions">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License">
-</p>
+<br><br>
 
-<p align="center">
-  <b>AI-powered automation panel for Adobe After Effects</b><br>
-  Advanced 3D VFX workflows • Native .glb/.gltf support • PBR Materials • Camera Tracking
-</p>
+<img src="https://img.shields.io/badge/After_Effects-9999FF?style=flat-square&logo=adobe-after-effects&logoColor=white" alt="After Effects">
+<img src="https://img.shields.io/badge/CEP_12.0-00D8FF?style=flat-square" alt="CEP">
+<img src="https://img.shields.io/badge/ExtendScript-ES3-F7DF1E?style=flat-square" alt="ExtendScript">
+<img src="https://img.shields.io/badge/Actions-158-4CAF50?style=flat-square" alt="Actions">
+<img src="https://img.shields.io/badge/Services-29-2196F3?style=flat-square" alt="Services">
+<img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
+
+**AI-powered automation panel for Adobe After Effects**
+
+[View Demo](#demo) · [Report Bug](https://github.com/phquand2000/adobe_effects_ext/issues) · [Request Feature](https://github.com/phquand2000/adobe_effects_ext/issues)
 
 ---
+
+</div>
+
+## Table of Contents
+
+- [About](#about)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Development](#development)
+- [Architecture](#architecture)
+- [Usage](#usage)
+- [Services Reference](#services-reference)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
+
+## About
+
+AE AI Assistant is a CEP extension that brings AI-powered automation to Adobe After Effects. With **29 services** and **158 actions**, it enables natural language control over complex VFX workflows including 3D scene setup, camera tracking, lighting rigs, and motion graphics.
+
+### Built With
+
+<p>
+  <img src="https://img.shields.io/badge/Adobe_CEP-FF0000?style=for-the-badge&logo=adobe&logoColor=white" alt="Adobe CEP">
+  <img src="https://img.shields.io/badge/ExtendScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="ExtendScript">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+</p>
+
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 ## Features
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-**AI Integration**  
-Natural language commands via OpenAI-compatible API
+### Core Capabilities
 
-**29 Services**  
-Camera, lighting, effects, tracking, rendering & more
-
-**158 Actions**  
-Pre-built automation for common VFX tasks
-
-**3D Support**  
-Native .glb/.gltf import, PBR materials, 3D camera
+- **AI Integration** — Natural language commands via OpenAI-compatible API
+- **29 Services** — Camera, lighting, effects, tracking, rendering & more  
+- **158 Actions** — Pre-built automation for common VFX tasks
+- **Workflow Templates** — From basic intros to professional VFX pipelines
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-**Camera Tracker**  
-3D motion tracking integration
+### Advanced VFX
 
-**Motion Blur & DOF**  
-Professional depth of field and blur
-
-**Workflow Templates**  
-From basic to professional VFX pipelines
-
-**ExtendScript Backend**  
-Modular architecture with 29 service modules
+- **3D Support** — Native .glb/.gltf import, PBR materials
+- **Camera Tracker** — 3D motion tracking integration
+- **Motion Blur & DOF** — Professional depth of field
+- **Lighting Rigs** — Three-point, studio, dramatic presets
 
 </td>
 </tr>
 </table>
 
-## 📦 Installation
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
-### macOS
+## Demo
 
-1. **Download** or clone this repository
-2. **Copy** the entire folder to:
-   ```
-   ~/Library/Application Support/Adobe/CEP/extensions/com.aeai.assistant
-   ```
-3. **Enable debug mode** (for unsigned extensions):
-   ```bash
-   defaults write com.adobe.CSXS.12 PlayerDebugMode 1
-   ```
-4. **Restart** After Effects
-5. Open panel: **Window → Extensions → AE AI Assistant**
+> Coming soon: GIF demonstrations of key features
 
-### Windows
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
-1. **Download** or clone this repository
-2. **Copy** the entire folder to:
-   ```
-   C:\Users\<username>\AppData\Roaming\Adobe\CEP\extensions\com.aeai.assistant
-   ```
-3. **Enable debug mode** (for unsigned extensions):
-   - Open Registry Editor (`regedit`)
-   - Navigate to: `HKEY_CURRENT_USER\SOFTWARE\Adobe\CSXS.12`
-   - Create DWORD value: `PlayerDebugMode` = `1`
-4. **Restart** After Effects
-5. Open panel: **Window → Extensions → AE AI Assistant**
-
-### Quick Install Script
-
-**macOS:**
-```bash
-mkdir -p ~/Library/Application\ Support/Adobe/CEP/extensions
-cp -r . ~/Library/Application\ Support/Adobe/CEP/extensions/com.aeai.assistant
-defaults write com.adobe.CSXS.12 PlayerDebugMode 1
-```
-
-**Windows (PowerShell):**
-```powershell
-$dest = "$env:APPDATA\Adobe\CEP\extensions\com.aeai.assistant"
-New-Item -ItemType Directory -Force -Path $dest
-Copy-Item -Recurse -Force * $dest
-reg add "HKCU\SOFTWARE\Adobe\CSXS.12" /v PlayerDebugMode /t REG_DWORD /d 1 /f
-```
-
-## 🛠️ Development Setup
+## Installation
 
 ### Prerequisites
 
 - Adobe After Effects 2026+ (v26.0+)
-- Node.js 18+ (for dev tools)
-- CEP debugging enabled
+- macOS 10.15+ or Windows 10/11
 
-### Project Structure
+### macOS
 
-```
-├── CSXS/
-│   └── manifest.xml      # Extension manifest
-├── css/
-│   └── style.css         # Panel styling
-├── js/
-│   ├── CSInterface.js    # Adobe CEP library
-│   ├── ai-client.js      # AI API client
-│   ├── config.js         # Configuration
-│   └── main.js           # Panel controller
-├── jsx/
-│   ├── core/             # Polyfills & utilities
-│   ├── data/             # AE API access layer
-│   ├── domain/           # Business logic
-│   ├── services/         # 29 service modules
-│   ├── hostscript.jsx    # Entry point
-│   └── loader.jsx        # Module loader
-├── index.html            # Panel UI
-└── package.json
-```
+1. Download or clone this repository:
+   ```bash
+   git clone https://github.com/phquand2000/adobe_effects_ext.git
+   ```
 
-### Development Workflow
+2. Copy to CEP extensions folder:
+   ```bash
+   cp -r adobe_effects_ext ~/Library/Application\ Support/Adobe/CEP/extensions/com.aeai.assistant
+   ```
 
-1. **Clone & install:**
+3. Enable debug mode for unsigned extensions:
+   ```bash
+   defaults write com.adobe.CSXS.12 PlayerDebugMode 1
+   ```
+
+4. Restart After Effects and open: **Window → Extensions → AE AI Assistant**
+
+### Windows
+
+1. Download or clone this repository:
+   ```powershell
+   git clone https://github.com/phquand2000/adobe_effects_ext.git
+   ```
+
+2. Copy to CEP extensions folder:
+   ```powershell
+   Copy-Item -Recurse adobe_effects_ext "$env:APPDATA\Adobe\CEP\extensions\com.aeai.assistant"
+   ```
+
+3. Enable debug mode (Run as Administrator):
+   ```powershell
+   reg add "HKCU\SOFTWARE\Adobe\CSXS.12" /v PlayerDebugMode /t REG_DWORD /d 1 /f
+   ```
+
+4. Restart After Effects and open: **Window → Extensions → AE AI Assistant**
+
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+
+## Development
+
+### Setup
+
+1. Clone and install dependencies:
    ```bash
    git clone https://github.com/phquand2000/adobe_effects_ext.git
    cd adobe_effects_ext
    npm install
    ```
 
-2. **Symlink for development (macOS):**
+2. Create symlink for development:
+
+   **macOS:**
    ```bash
    ln -s "$(pwd)" ~/Library/Application\ Support/Adobe/CEP/extensions/com.aeai.assistant
    ```
 
-3. **Symlink for development (Windows - Admin PowerShell):**
+   **Windows (Admin PowerShell):**
    ```powershell
    cmd /c mklink /D "$env:APPDATA\Adobe\CEP\extensions\com.aeai.assistant" (Get-Location)
    ```
 
-4. **Enable CEP debugging:**
-   - Edit `.debug` file for remote debugging
-   - Access Chrome DevTools at `http://localhost:8088`
-
-5. **Hot reload:**
-   - Use the reload script or press `Ctrl+Shift+R` in panel
+3. Enable CEP debugging in `.debug` file, then access DevTools at `http://localhost:8088`
 
 ### ExtendScript Guidelines
 
-> ⚠️ ExtendScript uses ECMAScript 3 (ES3) - No modern JavaScript features!
+> ⚠️ ExtendScript uses **ECMAScript 3** — No modern JavaScript features!
 
 ```javascript
 // ❌ NOT supported
@@ -183,65 +181,75 @@ var fn = function() {};
 
 1. Create method in `jsx/services/*-service.jsx`
 2. Add metadata in `jsx/services/action-registry.jsx`
-3. Register the action:
-   ```javascript
-   ActionRegistry.register('actionName', ServiceName.methodName);
-   ```
+3. Register: `ActionRegistry.register('actionName', ServiceName.methodName);`
 4. Add to `ALLOWED_ACTIONS` in `js/main.js`
 
-## 🚀 Usage
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+
+## Architecture
+
+```
+├── CSXS/
+│   └── manifest.xml        # Extension manifest
+├── css/
+│   └── style.css           # Panel styling
+├── js/
+│   ├── CSInterface.js      # Adobe CEP library
+│   ├── ai-client.js        # AI API client
+│   ├── config.js           # Configuration
+│   └── main.js             # Panel controller
+├── jsx/
+│   ├── core/               # Polyfills & utilities
+│   ├── data/               # AE API access layer
+│   ├── domain/             # Business logic (presets)
+│   ├── services/           # 29 service modules
+│   ├── hostscript.jsx      # Entry point
+│   └── loader.jsx          # Module loader
+└── index.html              # Panel UI
+```
+
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+
+## Usage
 
 ### Quick Actions
 
 | Action | Description |
 |--------|-------------|
-| 📦 Import | Import assets (.glb, .gltf, videos, images) |
-| 🎬 New Comp | Create new composition |
-| 🎲 3D Setup | Configure 3D environment |
-| 📷 Camera | Add and configure cameras |
-| 💡 Lights | Add lighting rigs |
-| 🌀 Blur | Motion blur settings |
-| 🎯 Tracker | 3D camera tracking |
-| 🌑 Shadow | Shadow catcher setup |
-| 👁️ Analyze | Analyze current frame |
+| **Import** | Import assets (.glb, .gltf, videos, images) |
+| **New Comp** | Create new composition |
+| **3D Setup** | Configure 3D environment |
+| **Camera** | Add and configure cameras |
+| **Lights** | Add lighting rigs |
+| **Blur** | Motion blur settings |
+| **Tracker** | 3D camera tracking |
+| **Shadow** | Shadow catcher setup |
+| **Analyze** | Analyze current frame |
 
 ### AI Commands
 
-Connect to an AI API (OpenAI compatible) and use natural language:
+Connect to an OpenAI-compatible API and use natural language:
 
-- *"Add a 3D camera with depth of field"*
-- *"Create a text layer with fade in animation"*
-- *"Apply color correction to selected layer"*
-- *"Set up a three-point lighting rig"*
+```
+"Add a 3D camera with depth of field"
+"Create a text layer with fade in animation"
+"Apply color correction to selected layer"
+"Set up a three-point lighting rig"
+```
 
 ### Workflow Templates
 
-Pre-built automation sequences:
-- **Basic**: Text intro, slideshow
-- **Intermediate**: Lower third, logo reveal, green screen
-- **Advanced**: 3D scene, parallax, text animators
-- **Professional**: Color grade, motion graphics
-- **VFX**: Screen replacement, tracking composite
+| Level | Templates |
+|-------|-----------|
+| **Basic** | Text intro, slideshow |
+| **Intermediate** | Lower third, logo reveal, green screen |
+| **Advanced** | 3D scene, parallax, text animators |
+| **Professional** | Color grade, motion graphics |
+| **VFX** | Screen replacement, tracking composite |
 
-## 📋 Requirements
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
-| Component | Version |
-|-----------|---------|
-| After Effects | 2026+ (v26.0) |
-| CEP Runtime | 12.0+ |
-| macOS | 10.15+ |
-| Windows | 10/11 |
-
-## 🔧 Configuration
-
-In the panel sidebar, configure:
-
-- **API URL**: Your AI server endpoint (e.g., `http://localhost:8317/v1`)
-- **API Key**: Your API authentication key
-
-Settings are persisted locally.
-
-## 📚 Services Reference
+## Services Reference
 
 | Category | Services | Actions |
 |----------|----------|---------|
@@ -257,33 +265,72 @@ Settings are persisted locally.
 | Media | `marker`, `audio`, `color` | 21 |
 | Workflow | `workflow`, `tracking` | 8 |
 
-## 🐛 Troubleshooting
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
-### Extension not appearing
+## Troubleshooting
 
-1. Verify debug mode is enabled
+<details>
+<summary><strong>Extension not appearing in After Effects</strong></summary>
+
+1. Verify debug mode is enabled (see Installation)
 2. Check extension path is correct
 3. Restart After Effects completely
-4. Check Console for errors (`Window → Extensions → AE AI Assistant`, then F12)
+4. Check AE version is 2026+ (v26.0+)
 
-### AI not connecting
+</details>
 
-1. Verify API URL is correct
+<details>
+<summary><strong>AI not connecting</strong></summary>
+
+1. Verify API URL is correct in Settings
 2. Check API key is valid
 3. Ensure AI server is running
 4. Check network/firewall settings
 
-### Scripts not executing
+</details>
 
-1. Enable "Allow Scripts to Write Files": `Edit → Preferences → Scripting & Expressions`
-2. Check ExtendScript Toolkit for errors
+<details>
+<summary><strong>Scripts not executing</strong></summary>
 
-## 📄 License
+1. Enable in AE: **Edit → Preferences → Scripting & Expressions → Allow Scripts to Write Files**
+2. Check ExtendScript Toolkit for detailed errors
 
-MIT License - see [LICENSE](LICENSE) for details.
+</details>
+
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+
+## Contributing
+
+Contributions are welcome! Feel free to:
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 ---
 
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/phquand2000">phquand2000</a>
-</p>
+<div align="center">
+
+### Support This Project
+
+If you find this extension helpful, consider buying me a coffee!
+
+<a href="https://buymeacoffee.com/severus1509">
+  <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee">
+</a>
+
+<br><br>
+
+Made with ❤️ by [phquand2000](https://github.com/phquand2000)
+
+</div>
